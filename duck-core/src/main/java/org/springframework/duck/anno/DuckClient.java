@@ -1,4 +1,4 @@
-package org.springframework.cloud.anno;
+package org.springframework.duck.anno;
 
 import org.springframework.core.annotation.AliasFor;
 

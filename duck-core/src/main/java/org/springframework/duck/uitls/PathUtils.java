@@ -1,4 +1,4 @@
-package org.springframework.cloud.uitls;
+package org.springframework.duck.uitls;
 
 import org.springframework.util.StringUtils;
 

@@ -1,4 +1,4 @@
-package org.springframework.cloud;
+package org.springframework.duck;
 
 import org.springframework.beans.factory.annotation.AnnotatedBeanDefinition;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;

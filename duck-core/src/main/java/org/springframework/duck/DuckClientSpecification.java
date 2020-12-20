@@ -1,4 +1,4 @@
-package org.springframework.cloud;
+package org.springframework.duck;
 
 import lombok.Data;
 import org.springframework.cloud.context.named.NamedContextFactory;

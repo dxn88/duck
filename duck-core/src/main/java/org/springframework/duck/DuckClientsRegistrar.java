@@ -1,4 +1,4 @@
-package org.springframework.cloud;
+package org.springframework.duck;
 
 
 import org.springframework.beans.factory.annotation.AnnotatedBeanDefinition;
@@ -8,9 +8,6 @@ import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionReaderUtils;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
-import org.springframework.cloud.anno.DuckClient;
-import org.springframework.cloud.uitls.PackageUtils;
-import org.springframework.cloud.uitls.PathUtils;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
@@ -21,6 +18,9 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.filter.AnnotationTypeFilter;
 import org.springframework.core.type.filter.TypeFilter;
+import org.springframework.duck.anno.DuckClient;
+import org.springframework.duck.uitls.PackageUtils;
+import org.springframework.duck.uitls.PathUtils;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
@@ -119,8 +119,8 @@ class DuckClientsRegistrar
             } else {
                 name = "default." + metadata.getClassName();
             }
-            registerClientConfiguration(registry, name,
-                    defaultAttrs.get("defaultConfiguration"));
+//            registerClientConfiguration(registry, name,
+//                    defaultAttrs.get("defaultConfiguration"));
         }
     }
 

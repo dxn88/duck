@@ -1,6 +1,6 @@
-package org.springframework.cloud;
+package org.springframework.duck;
 
-import org.springframework.cloud.anno.DuckClient;
+import org.springframework.duck.anno.DuckClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**

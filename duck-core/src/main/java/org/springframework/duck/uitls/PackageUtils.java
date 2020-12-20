@@ -1,7 +1,7 @@
-package org.springframework.cloud.uitls;
+package org.springframework.duck.uitls;
 
-import org.springframework.cloud.EnableDuckClients;
 import org.springframework.core.type.AnnotationMetadata;
+import org.springframework.duck.EnableDuckClients;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
 
